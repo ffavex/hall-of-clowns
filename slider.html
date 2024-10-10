@@ -11,6 +11,10 @@
             font-family: Arial, sans-serif;
             background-color: rgb(32, 32, 32);
             color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Overlay */
@@ -33,8 +37,11 @@
         /* Hidden content */
         .content {
             display: none;
-            text-align: center;
-            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .pop-up {
@@ -44,6 +51,7 @@
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
             max-width: 500px;
             margin: auto;
+            text-align: center;
         }
 
         /* Circular image */
@@ -58,6 +66,7 @@
         .info {
             margin-top: 10px;
             color: #fff;
+            text-align: left; /* Align the text in the info section to the left */
         }
     </style>
 </head>
@@ -71,7 +80,7 @@
 <!-- Hidden Content -->
 <div class="content" id="content">
     <div class="pop-up">
-               <img src="https://cdn.discordapp.com/attachments/1289704395482857698/1293749943563063427/IMG_5723.png?ex=67088207&is=67073087&hm=e87028e32486d700fec6e55928e874d5920970f5bb013ca38824511ea4f38f8d&" alt="Cropped Image">
+        <img src="https://cdn.discordapp.com/attachments/1289704395482857698/1293749943563063427/IMG_5723.png?ex=67088207&is=67073087&hm=e87028e32486d700fec6e55928e874d5920970f5bb013ca38824511ea4f38f8d&" alt="Cropped Image">
         <div class="info">Name: Jeremy Fernandez</div>
         <div class="info">State: Florida</div>
         <div class="info">City: Fort Lauderdale</div>
@@ -92,7 +101,7 @@
     // Function to remove overlay and play music
     overlay.addEventListener('click', function() {
         overlay.style.display = 'none';  // Hide the overlay
-        content.style.display = 'block';  // Show the content
+        content.style.display = 'flex';  // Show the content
         music.play();  // Play music
     });
 </script>
