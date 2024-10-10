@@ -10,6 +10,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: rgb(32, 32, 32);
+            color: white;
         }
 
         /* Overlay */
@@ -26,6 +27,7 @@
             color: white;
             font-size: 2rem;
             z-index: 10;
+            cursor: pointer;
         }
 
         /* Hidden content */
@@ -44,10 +46,12 @@
             margin: auto;
         }
 
+        /* Circular image */
         .pop-up img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 15px;
         }
 
@@ -67,7 +71,7 @@
 <!-- Hidden Content -->
 <div class="content" id="content">
     <div class="pop-up">
-        <img src="path-to-your-cropped-image.jpg" alt="Cropped Image">
+               <img src="https://example.com/your-cropped-image.jpg" alt="Cropped Image">
         <div class="info">Info: Example 1</div>
         <div class="info">Info: Example 2</div>
         <div class="info">Info: Example 3</div>
@@ -76,7 +80,7 @@
 </div>
 
 <!-- Audio element -->
-<audio id="backgroundMusic" src="clown.mp3"></audio>
+<audio id="backgroundMusic" src="You're on Doxbin.mp3"></audio>
 
 <script>
     // Get elements
